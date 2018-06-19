@@ -14,15 +14,17 @@
   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
     rel='stylesheet' type='text/css'>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
   <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
+  <!-- <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> -->
+  <script src="script.js"></script>
   <!-- Custom styles for this template -->
   <link href="css/creative.css" rel="stylesheet">
 
@@ -41,7 +43,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact Support</a>
+            <a class="nav-link js-scroll-trigger" href="#" onclick="show_support_hide_header()">
+              Contact Support</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About Galileo</a>
@@ -51,63 +54,68 @@
     </div>
   </nav>
 
-  <header class="masthead text-center d-flex">
-    <div class="container my-auto">
-      <div class="row justify-content-center">
-        <div class="col-md-10 mx-auto">
-          <h1 class="text-uppercase">
-            <strong>the Galileo Project</strong>
-          </h1>
-          <hr>
-        </div>
-        <div class="col-md-10 mx-auto">
-          <h4 class="text-faded mb-3">Galileo - Accurate reporting leads to exact collection</h4>
-          <div class="row justify-content-center">
+  <div id="mainPage">
+    <header class="masthead text-center d-flex">
+      <div class="container my-auto">
+        <div class="row justify-content-center">
+          <div class="col-md-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>the Galileo Project</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-md-10 mx-auto">
+            <h4 class="text-faded mb-3">Galileo - Accurate reporting leads to exact collection</h4>
+            <div class="row justify-content-center">
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-1 ml-1" href="#about">Start a Surgery Report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-1 ml-1" href="#about">Load a report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-1 ml-1" href="#about">Statistics</a>
-            <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-1 ml-1" href="#about">Find Out More</a>
-        </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">At Your Service</h2>
-          <h2 class="section-heading">Let's Get In Touch!</h2>
-                 </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center">
-          <!-- <i class="fa fa-phone fa-3x mb-3 sr-contact"></i> -->
-          <p>123-456-6789</p>
-          <img src="img/Phone.width-400.png" alt="phone" srcset="">
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <!-- <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i> -->
-          <p>
-            <a href="mailto:Support@Galileo.com">Support@Galileo.com
-          
-          <img src="img/mail-icon-button-200x200.png" alt="" srcset=""></a></p>
+              <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-1 ml-1" href="#about">Find Out More</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
+  </div>
+  <div id="contact" class="d-none">
+    <section class="d-flex">
+      <div class="container bg-white">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <!-- <i class="fa fa-phone fa-3x mb-3 sr-contact"></i> -->
+            <p class="d-inline-block">Call Us: 1-800-456-6789</p>
+            <img class="d-inline-block" src="img/Phone.width-400.png" alt="phone">
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <!-- <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i> -->
+            <p>
+              <a class="d-inline-block" href="mailto:Support@Galileo.com">Support@Galileo.com
+                <img class="d-inline-block" src="img/mail-icon-button-200x200.png" alt="email">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
-  <!-- <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
-  <!-- <script src="vendor/scrollreveal/scrollreveal.min.js"></script> -->
-  <!-- <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <!-- <script src="js/creative.min.js"></script> --> -->
+  <script src="js/creative.min.js"></script>
 
 </body>
 

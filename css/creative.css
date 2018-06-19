@@ -50,6 +50,7 @@ h6 {
   color: rgba(0,0,0);
   border-radius: 25px;
   background-color: rgb(62, 219, 180, 0.7);
+  padding: 18px 0px 18px 0px;
 }
 
 section {
@@ -168,15 +169,42 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
+@media screen and (max-width: 1100px) {
+  #contact > section > div > div > div > img,
+  #contact > section > div > div > div > p > a > img
+   {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact > section > div > div > div > img,
+  #contact > section > div > div > div > p > a > img
+   {
+    max-width: 50px;
+  }
+}
+
+
+#page-top {
   background-image: url("../img/galileo-bg.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  /* background-image: url("../img/galileo-bg.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 header.masthead hr {
