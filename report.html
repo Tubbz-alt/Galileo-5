@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/creative.css">
+</head>
+
+<body class="reportMain">
+    <div class="container text-center">
+        <h1>Surgery Report</h1>
+        <div class="text-center text-faded">
+            <p class="d-inline-block font-weight-bold">Customer Name:&nbsp&nbsp</p>
+            <p class="d-inline-block font-italic">
+                <mark>John Doe</mark>
+            </p>
+        </div>
+
+        <table class="table table-hover" id="myTable">
+            <thead>
+                <tr>
+                    <th class="table-td-style">Number</th>
+                    <th class="table-td-style">Drug Name</th>
+                    <th class="table-td-style">Quantity (mg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-td-style">1</td>
+                    <td class="table-td-style">Diprivan</td>
+                    <td class="table-tad-style">10 mg</td>
+                </tr>
+                <tr>
+                    <td class="table-td-style">2</td>
+                    <td class="table-td-style">Ketalar</td>
+                    <td class="table-td-style">100 mg</td>
+                </tr>
+                <tr>
+                    <td class="table-td-style">3</td>
+                    <td class="table-td-style">Sojourn</td>
+                    <td class="table-td-style">8 mg</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+                <div class="form-group">
+            <input type="hidden" id="text1" name="num" value="0">
+            </div>
+            <div class="form-group">
+                    <label for="drugName">Drug Name</label>
+            <select class="form-control" id="drugName">
+                <option>Brevital</option>
+                <option>Ketalar</option>
+                <option>Diprivan</option>
+                <option>Pentothal</option>
+                <option>Propoven</option>
+                <option>Amidate</option>
+                <option>Forane</option>
+                <option>isoflurane</option>
+                <option>Lusedra</option>
+                <option>fospropofol</option>
+                <option>Sojourn</option>
+                <option>sevoflurane</option>
+                <option>Suprane</option>
+                <option>desflurane</option>
+                <option>Terrell</option>
+                <option>isoflurane</option>
+                <option>Ultane</option>
+                <option>sevoflurane</option>
+            </select>
+            </div>
+            <div class="form-group">
+                    <label for="quantity">Quantity</label>
+            <select class="form-control" id="quantity">
+                <option>1 mg</option>
+                <option>2 mg</option>
+                <option>3 mg</option>
+                <option>4 mg</option>
+                <option>5 mg</option>
+                <option>6 mg</option>
+                <option>7 mg</option>
+                <option>8 mg</option>
+                <option>9 mg</option>
+                <option>10 mg</option>
+                <option>20 mg</option>
+                <option>50 mg</option>
+                <option>100 mg</option>
+                <option>200 mg</option>
+                <option>500 mg</option>
+                <option>1000 mg</option>
+            </select>
+            </div>
+            <input class="btn btn-primary" type="button" value="add line" onclick="addLineToTable()">
+
+            <div class="form-group">
+                <label for="textArea">Additional info:</label>
+                <textarea class="form-control" id="textArea" rows="3"></textarea>
+            </div>
+            <!-- <input type="text" name="4" id="text4"> -->
+            <a class="btn btn-primary btn-xl js-scroll-trigger d-block mt-5" href="#about">Send Report To Control</a>
+        </form>
+</body>
+
+</html>
