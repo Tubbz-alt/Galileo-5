@@ -188,11 +188,11 @@ img::-moz-selection {
 
 #page-top {
   background-image: url("../img/galileo-bg.jpg");
-  background-position: center center;
+  /* background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
@@ -319,12 +319,12 @@ header.masthead p {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 300px;
+  /* border-radius: 300px; */
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-xl {
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
 }
 
 .btn-primary {
