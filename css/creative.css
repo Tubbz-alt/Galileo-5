@@ -183,8 +183,24 @@ img::-moz-selection {
    {
     max-width: 50px;
   }
+/* }
+
+@media screen and (max-width : 768px) { */
+  .btn-primary {
+    width: 43%;
+  }
 }
 
+@media screen and (max-width : 400px) {
+
+  #btn-container {
+    justify-content: center!important;
+  }
+
+  .btn-primary {
+    width: 80%;
+  }
+}
 
 #page-top {
   background-image: url("../img/galileo-bg.jpg");
