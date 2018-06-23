@@ -1,12 +1,43 @@
 
-function show_support_hide_header() {
+function show_support() {
     var contact = document.getElementById("contact");
     var header = document.getElementById("mainPage");
+    var about = document.getElementById("about");
 
-    contact.classList.toggle('d-none');
-    header.classList.toggle('d-none');
-
+    if (contact.classList.contains('d-none'))
+        contact.classList.remove('d-none');
+    if (!header.classList.contains('d-none'))
+        header.classList.add('d-none');
+    if (!about.classList.contains('d-none'))
+        about.classList.add('d-none');
 }
+
+function show_about() {
+    var about = document.getElementById("about");
+    var header = document.getElementById("mainPage");
+    var contact = document.getElementById("contact");
+    
+    if (! contact.classList.contains('d-none'))
+        contact.classList.add('d-none');
+    if (!header.classList.contains('d-none'))
+        header.classList.add('d-none');
+    if (about.classList.contains('d-none'))
+        about.classList.remove('d-none');
+}
+
+function show_header() {
+    var about = document.getElementById("about");
+    var header = document.getElementById("mainPage");
+    var contact = document.getElementById("contact");
+    
+    if (! contact.classList.contains('d-none'))
+        contact.classList.add('d-none');
+    if (header.classList.contains('d-none'))
+        header.classList.remove('d-none');
+    if (!about.classList.contains('d-none'))
+        about.classList.add('d-none');
+}
+
 
 function addLineToTable() {
 

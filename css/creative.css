@@ -370,3 +370,7 @@ header.masthead p {
 .reportMain {
   background-color: lightcyan;
 }
+
+.bg-galileo {
+  background-color: rgb(114, 231, 238); 
+}

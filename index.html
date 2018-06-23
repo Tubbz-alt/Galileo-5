@@ -46,11 +46,12 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#" onclick="show_support_hide_header()">
+            <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_support()">
               Contact Support</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About Galileo</a>
+            <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_about()">
+              About Galileo</a>
           </li>
         </ul>
       </div>
@@ -73,7 +74,8 @@
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="report.html">New Surgery Report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="#about">Load a report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="#about">Statistics</a>
-              <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="#about">Find Out More</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_about()">
+                About Galileo</a>
             </div>
           </div>
         </div>
@@ -82,7 +84,7 @@
   </div>
   <div id="contact" class="d-none">
     <section class="d-flex">
-      <div class="container bg-white" onclick="show_support_hide_header()">
+      <div class="container bg-white" onclick="show_header()">
         <div class="row justify-content-center">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">At Your Service</h2>
@@ -102,6 +104,25 @@
                 <img class="d-inline-block" src="img/mail-icon-button-200x200.png" alt="email">
               </a>
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="about" class="d-none">
+    <section class="d-flex">
+      <div class="container bg-galileo" onclick="show_header()">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 mx-auto ">
+            <h5>
+              <u>We are excited to present <b>Galileo</b></u>!</h5>
+            <p>Anesthesia Information Management System for Anesthesia Services companies.</p>
+            <h5><u>About RB&G</u></h5>
+            <p>Software company that exist 22 years with 245 employees Development centers in Israel, US and Australia.
+              <br>Headquarters located in NYC, Our Customers are big hospitals (over 2000 beds) in Israel and in US, Canada &
+              Australia.
+              <br>We have long experience with successful implementation systems ICU management system & OR management system</p>
           </div>
         </div>
       </div>
