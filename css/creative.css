@@ -167,6 +167,10 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #F05F40;
   }
+
+  .btn-primary {
+    min-width: 46%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
