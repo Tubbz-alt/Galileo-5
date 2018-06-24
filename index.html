@@ -71,7 +71,9 @@
           <div class="col-md-10 mx-auto">
             <h4 class="text-faded mb-3">Galileo - Your new Anesthesia information management system</h4>
             <div id="btn-container" class="row">
-              <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="report.html">New Surgery Report</a>
+              <!-- <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="report.html">New Surgery Report</a> -->
+              <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" data-toggle="modal"
+                data-target="#selctSurgery">New Surgery Report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="#about">Load a report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="Surgical&AnaesthesiaDataReport.pdf" targt="new">Statistics Report</a>
               <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_about()">
@@ -116,9 +118,13 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 mx-auto ">
             <h5>
-              <u>We are excited to present <b>Galileo</b></u>!</h5>
+              <u>We are excited to present
+                <b>Galileo</b>
+              </u>!</h5>
             <p>Anesthesia Information Management System for Anesthesia Services companies.</p>
-            <h5><u>About RB&G</u></h5>
+            <h5>
+              <u>About RB&G</u>
+            </h5>
             <p>Software company that exist 22 years with 245 employees Development centers in Israel, US and Australia.
               <br>Headquarters located in NYC, Our Customers are big hospitals (over 2000 beds) in Israel and in US, Canada &
               Australia.
@@ -128,6 +134,110 @@
       </div>
     </section>
   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="selctSurgery" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin" action="report.html" method="GET">
+            <h2 class="form-signin-heading mb-2">Start Report - Selection</h2>
+            <div class="form-control">
+              <label for="drname" class="sr-only">Dr. Name</label>
+              <select id="drname form-control" name="dr-name">
+                <option value="" disabled selected>1. Select Anasthetist</option>
+                <option value="1">Dr.&nbspWho</option>
+                <option value="2">Dr. Saab</option>
+                <option value="3">Dr. Mercedes</option>
+                <option value="4">Dr Jones</option>
+              </select>
+            </div>
+            <h5 class="mt-4 mb-1">2. select patient:</h5>
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th>Select</th>
+                  <th>Name</th>
+                  <th>SSN</th>
+                  <th>Surgery No.</th>
+                  <th>Shedule</th>
+                  <th>Surgery Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <form>
+                  <tr>
+                    <td>
+                      <div class="radio form-control">
+                        <input type="radio" id='p1' name="optradio" value="1">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="radiotext">
+                        <label for='p1'>John Doe</label>
+                      </div>
+                    </td>
+                    <td>1234567890</td>
+                    <td>1234567890-18</td>
+                    <td>Jul 5 2018 15:00</td>
+                    <td>Complex</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="radio form-control">
+                        <input type="radio" id='p2' name="optradio" value="2">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="radiotext">
+                        <label for='p1'>Button Benjamin</label>
+                      </div>
+                    </td>
+                    <td>0987654321</td>
+                    <td>0987654321-18</td>
+                    <td>Jul 5 2018 15:10</td>
+                    <td>Simple</td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <div class="radio form-control">
+                          <input type="radio" id='p3' name="optradio" value="3">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="radiotext">
+                          <label for='p1'>David Cohen</label>
+                        </div>
+                      </td>
+                      <td>12389045678</td>
+                      <td>12389045678-18</td>
+                      <td>Jul 5 2018 15:15</td>
+                      <td>Simple</td>
+                    </tr>
+                </form>
+              </tbody>
+            </table>
+            <!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button> -->
+            <button id="start-report" type="submit" class="btn btn-primary">Start Report</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </nav> -->
+
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
