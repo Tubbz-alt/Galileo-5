@@ -13,8 +13,16 @@ function seconds_elapsed() {
     return (seconds_elapsed);
 }
 
+function setDate() {
+    var d = new Date();
+    document.getElementById("currentDate").innerHTML = d;
+
+    time_spent();
+}
+
 // THIS FUNCTION TAKES THE SECONDS ELAPSED AND CONVERTS THEM FOR OUTPUT
 function time_spent() {
+
     // TAKE THE SECONDS ELAPSED
     var secs = seconds_elapsed();
 

@@ -16,8 +16,8 @@ function show_about() {
     var about = document.getElementById("about");
     var header = document.getElementById("mainPage");
     var contact = document.getElementById("contact");
-    
-    if (! contact.classList.contains('d-none'))
+
+    if (!contact.classList.contains('d-none'))
         contact.classList.add('d-none');
     if (!header.classList.contains('d-none'))
         header.classList.add('d-none');
@@ -29,8 +29,8 @@ function show_header() {
     var about = document.getElementById("about");
     var header = document.getElementById("mainPage");
     var contact = document.getElementById("contact");
-    
-    if (! contact.classList.contains('d-none'))
+
+    if (!contact.classList.contains('d-none'))
         contact.classList.add('d-none');
     if (header.classList.contains('d-none'))
         header.classList.remove('d-none');

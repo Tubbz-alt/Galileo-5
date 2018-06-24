@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="css/creative.css">
 </head>
 
-<body class="reportMain" onload="time_spent()">
+<body class="reportMain" onload="setDate()">
     <div class="container text-center">
         <h1>Surgery Report</h1>
         <div class="text-center text-faded">
             <p class="d-inline-block font-weight-bold">Customer Name:&nbsp&nbsp</p>
             <p class="d-inline-block font-italic">
-                <mark>John Doe</mark>&nbsp&nbsp&nbsp&nbspSurjery No.: 383926702-18&nbsp&nbspSurgery Start Time: 13:04:50
-            </p>
+                <mark>John Doe</mark>&nbsp&nbsp&nbsp&nbspSurjery No.: 383926702-18&nbsp&nbsp</p><br>
+                <p>Surgery Start Time:<span id="currentDate"></span></p>
             <form name="display">
                 <div class="form-group">
                     <label for="timeElapsed">Time Elapsed:</label>
