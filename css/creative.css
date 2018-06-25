@@ -173,41 +173,14 @@ img::-moz-selection {
   }
 }
 
-@media screen and (max-width: 1100px) {
-  #contact > section > div > div > div > img,
-  #contact > section > div > div > div > p > a > img
-   {
-    max-width: 100px;
-  }
-}
 
-@media screen and (max-width: 992px) {
-  #contact > section > div > div > div > img,
-  #contact > section > div > div > div > p > a > img
-   {
-    max-width: 50px;
-  }
-/* }
-
-@media screen and (max-width : 768px) { */
-  .btn-primary {
-    width: 44%;
-  }
-}
-
-@media screen and (max-width : 400px) {
-
-  #btn-container {
-    justify-content: center!important;
-  }
-
-  .btn-primary {
-    width: 80%;
-  }
-}
 
 #page-top {
   background-image: url("../img/galileo-bg.jpg");
+  background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center center; 
+
   /* background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -377,4 +350,55 @@ header.masthead p {
 
 .bg-galileo {
   background-color: rgb(114, 231, 238); 
+}
+
+@media screen and (max-width: 1100px) {
+  #contact > section > div > div > div > img,
+  #contact > section > div > div > div > p > a > img
+   {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact > section > div > div > div > img,
+  #contact > section > div > div > div > p > a > img
+   {
+    max-width: 50px;
+  }
+/* }
+
+@media screen and (max-width : 801px) { */
+  .btn-primary {
+    width: 44%;
+  }
+}
+
+@media 
+  (max-width: 801px) 
+  and (orientation: portrait) { 
+
+  #about > section > .container,
+  #contact > section > .container {
+    position: relative;
+    top: 300px;
+  }
+  .text-faded {
+    padding: 40px 0px 40px 0px;
+  }
+  .btn-l {
+    padding: 4rem 2.5rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width : 400px) {
+
+  #btn-container {
+    justify-content: center!important;
+  }
+
+  .btn-primary {
+    width: 80%;
+  }
 }
