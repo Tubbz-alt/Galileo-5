@@ -191,7 +191,7 @@ img::-moz-selection {
 
 @media screen and (max-width : 768px) { */
   .btn-primary {
-    width: 43%;
+    width: 44%;
   }
 }
 
@@ -345,6 +345,10 @@ header.masthead p {
 
 .btn-xl {
   padding: 2rem 3rem;
+}
+
+.btn-l {
+  padding: 1.5rem 2.5rem;
 }
 
 .btn-primary {
