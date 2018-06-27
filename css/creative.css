@@ -50,7 +50,7 @@ h6 {
   color: rgba(0,0,0);
   border-radius: 25px;
   background-color: rgb(62, 219, 180, 0.7);
-  padding: 18px 0px 18px 0px;
+  padding: 18px 18px 18px 18px;
 }
 
 section {
@@ -136,7 +136,7 @@ img::-moz-selection {
     color: rgba(70, 13, 228, 0.7);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(240, 95, 64, 0.5)
+    color: rgba(240, 95, 64, 0.5);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
@@ -211,6 +211,15 @@ header.masthead h1 {
 
 header.masthead p {
   font-weight: 300;
+}
+
+.smiley-img {
+  position: absolute;
+  bottom: 334px;
+  left: 1060px;
+  /* height: 117px;
+  width: 117px; */
+  background: url("img/vector-smilies-transparent.jpg");
 }
 
 @media (min-width: 768px) {
@@ -396,7 +405,7 @@ header.masthead p {
   }
   .btn-l {
     padding: 4rem 2.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .rbtn-1 {
@@ -408,7 +417,7 @@ header.masthead p {
   }
 }
 
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 500px) {
 
   #btn-container {
     justify-content: center!important;
@@ -416,5 +425,6 @@ header.masthead p {
 
   .btn-primary {
     width: 80%;
+    display: block!important;
   }
 }

@@ -47,7 +47,19 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_support()">
+              Load a saved report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_support()">
+              Report Archive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_support()">
               Contact Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_support()">
+              Settings</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="javascript:void(0)" onclick="show_about()">
@@ -69,13 +81,23 @@
             <hr>
           </div>
           <div class="col-md-9 mx-auto">
-            <h4 class="text-faded mb-3">Galileo - Your new Anesthesia information management system</h4>
+            <!-- <div class="smiley-img">
+              <!-- <img class="d-inline-block" src="img/green-smiley.png" alt=""> -->
+              <!-- <p>Sterilized</p> -->
+            <!-- </div> --> 
+            <h4 class="d-inline-block text-faded mb-3">Galileo - Your new Anesthesia information management system</h4>
             <div id="btn-container" class="row">
               <!-- <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="report.html">New Surgery Report</a> -->
-              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4 justify-content-center" href="javascript:void(0)" data-toggle="modal"
-                data-target="#selctSurgery">New Surgery Report</a>
-              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_support()">Contact Support</a>
-              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="Surgical&AnaesthesiaDataReport.pdf" targt="new">Statistics Report</a>
+              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4 justify-content-center" href="javascript:void(0)"
+                data-toggle="modal" data-target="#selctSurgery">New Surgery Report</a>
+              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_support()">
+                Contact Support</a>
+              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="#">
+                Load saved Report</a>
+              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="#">
+                Reports Archive</a>
+              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="Surgical&AnaesthesiaDataReport.pdf" targt="new">
+                Statistics Report</a>
               <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_about()">
                 About Galileo</a>
             </div>
@@ -205,21 +227,21 @@
                     <td>Simple</td>
                   </tr>
                   <tr>
-                      <td>
-                        <div class="radio form-control">
-                          <input type="radio" id='p3' name="optradio" value="3">
-                        </div>
-                      </td>
-                      <td>
-                        <div class="radiotext">
-                          <label for='p1'>David Cohen</label>
-                        </div>
-                      </td>
-                      <td>12389045678</td>
-                      <td>12389045678-18</td>
-                      <td>Jul 5 2018 15:15</td>
-                      <td>Simple</td>
-                    </tr>
+                    <td>
+                      <div class="radio form-control">
+                        <input type="radio" id='p3' name="optradio" value="3">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="radiotext">
+                        <label for='p1'>David Cohen</label>
+                      </div>
+                    </td>
+                    <td>12389045678</td>
+                    <td>12389045678-18</td>
+                    <td>Jul 5 2018 15:15</td>
+                    <td>Simple</td>
+                  </tr>
                 </form>
               </tbody>
             </table>
