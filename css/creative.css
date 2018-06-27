@@ -352,6 +352,14 @@ header.masthead p {
   background-color: rgb(114, 231, 238); 
 }
 
+.rbtn-1 {
+  margin-left: 20px;
+}
+
+.rbtn-2 {
+  margin-left: 55px;
+}
+
 @media screen and (max-width: 1100px) {
   #contact > section > div > div > div > img,
   #contact > section > div > div > div > p > a > img
@@ -389,6 +397,14 @@ header.masthead p {
   .btn-l {
     padding: 4rem 2.5rem;
     margin-top: 4rem;
+  }
+
+  .rbtn-1 {
+    margin-left: 19px;
+  }
+  
+  .rbtn-2 {
+    margin-left: 49px;
   }
 }
 
