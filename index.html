@@ -73,6 +73,10 @@
   <div id="mainPage">
     <header class="masthead text-center d-flex">
       <div class="container my-auto">
+         <div class="smiley-img">
+              <img id="smiley-img" class="d-inline-block" src="img/green-smiley1.png" alt="" onclick="toggle_smiley()">
+              <p id="smiley-text" class="ml-3">Sterilized</p>
+            </div> 
         <div class="row justify-content-center">
           <div class="col-md-9 mx-auto">
             <h1 class="text-uppercase">
@@ -81,25 +85,21 @@
             <hr>
           </div>
           <div class="col-md-9 mx-auto">
-            <!-- <div class="smiley-img">
-              <!-- <img class="d-inline-block" src="img/green-smiley.png" alt=""> -->
-              <!-- <p>Sterilized</p> -->
-            <!-- </div> --> 
             <h4 class="d-inline-block text-faded mb-3">Galileo - Your new Anesthesia information management system</h4>
             <div id="btn-container" class="row">
               <!-- <a class="btn btn-primary btn-xl js-scroll-trigger d-inline-block mb-4 ml-4" href="report.html">New Surgery Report</a> -->
-              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4 justify-content-center" href="javascript:void(0)"
-                data-toggle="modal" data-target="#selctSurgery">New Surgery Report</a>
+              <a class="btn btn-primary1 btn-l js-scroll-trigger d-inline-block mb-4 ml-4 justify-content-center" href="javascript:void(0)"
+                data-toggle="modal" data-target="#selctSurgery" onclick="smiley_red()">New Surgery Report</a>
               <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_support()">
                 Contact Support</a>
               <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="#">
                 Load saved Report</a>
               <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="#">
                 Reports Archive</a>
-              <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="Surgical&AnaesthesiaDataReport.pdf" targt="new">
+              <!-- <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="Surgical&AnaesthesiaDataReport.pdf" targt="new">
                 Statistics Report</a>
               <a class="btn btn-primary btn-l js-scroll-trigger d-inline-block mb-4 ml-4" href="javascript:void(0)" onclick="show_about()">
-                About Galileo</a>
+                About Galileo</a> -->
             </div>
           </div>
         </div>

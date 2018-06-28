@@ -168,7 +168,7 @@ img::-moz-selection {
     color: #F05F40;
   }
 
-  .btn-primary {
+  .btn-primary, .btn-primary1 {
     min-width: 46%;
   }
 }
@@ -176,10 +176,11 @@ img::-moz-selection {
 
 
 #page-top {
+  /* margin-top: 20px; */
   background-image: url("../img/galileo-bg.jpg");
   background-repeat: no-repeat;
-    background-size: 80% 80%;
-    background-position: center center; 
+    background-size: 85% 90%;
+    background-position: bottom center; 
 
   /* background-position: center center;
   -webkit-background-size: cover;
@@ -215,11 +216,11 @@ header.masthead p {
 
 .smiley-img {
   position: absolute;
-  bottom: 334px;
-  left: 1060px;
-  /* height: 117px;
-  width: 117px; */
-  background: url("img/vector-smilies-transparent.jpg");
+  top: 80px;
+  right: 78px;
+  /* height: 117px;*/
+  width: 50px; 
+  /* background: url("img/vector-smilies-transparent.jpg"); */
 }
 
 @media (min-width: 768px) {
@@ -338,6 +339,11 @@ header.masthead p {
   border-color: #F05F40;
 }
 
+.btn-primary1 {
+  background-color: rgb(24, 221, 178);
+  border-color: rgb(24, 221, 178);
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
   background-color: #ee4b28 !important;
@@ -345,6 +351,15 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.btn-primary1:hover, .btn-primary1:focus, .btn-primary1:active {
+  color: #fff;
+  background-color: rgb(18, 197, 155) !important;
+}
+
+.btn-primary1:active, .btn-primary1:focus {
+  box-shadow: 0 0 0 0.2rem rgb(18, 197, 155) !important;
 }
 
 .table-td-style {
@@ -386,7 +401,7 @@ header.masthead p {
 /* }
 
 @media screen and (max-width : 801px) { */
-  .btn-primary {
+  .btn-primary, .btn-primary1 {
     width: 44%;
   }
 }
@@ -415,6 +430,13 @@ header.masthead p {
   .rbtn-2 {
     margin-left: 49px;
   }
+
+  .smiley-img {
+    position: absolute;
+    top: 125px;
+    right: 100px;
+    width: 80px;
+  }
 }
 
 @media screen and (max-width : 500px) {
@@ -423,7 +445,7 @@ header.masthead p {
     justify-content: center!important;
   }
 
-  .btn-primary {
+  .btn-primary, .btn-primary1 {
     width: 80%;
     display: block!important;
   }

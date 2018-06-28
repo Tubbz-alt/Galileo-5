@@ -69,3 +69,39 @@ function addLineToTable() {
 
     tBodyRef.innerHTML += tr.outerHTML;
 }
+
+this.smiley = 1;
+
+function toggle_smiley() {
+    var img1 = "img/green-smiley1.png";
+    var img2 = "img/red-smiley1.png"
+
+    if (this.smiley === 0)
+        return;
+
+    var smiley_elem = document.getElementById("smiley-img");
+    var smiley_text = document.getElementById("smiley-text");
+
+    if (this.smiley % 2 != 0) {
+        smiley_elem.src = img2;
+        smiley_text.innerText ="UnSterilized";
+    }
+    else {
+        smiley_elem.src = img1;
+        smiley_text.innerText ="Sterilized";
+    }
+
+    this.smiley++;
+}
+
+function smiley_red() {
+    var img2 = "img/red-smiley1.png"
+
+    var smiley_elem = document.getElementById("smiley-img");
+    var smiley_text = document.getElementById("smiley-text");
+
+        smiley_elem.src = img2;
+        smiley_text.innerText ="UnSterilized";
+
+    this.smiley = 0;;
+}
